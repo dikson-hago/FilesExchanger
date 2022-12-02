@@ -1,0 +1,2 @@
+namespace FilesExchanger.Application.Compression
+
