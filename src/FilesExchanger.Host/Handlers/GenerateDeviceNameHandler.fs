@@ -1,0 +1,2 @@
+module FilesExchanger.Host.Handlers.GenerateDeviceNameHandler
+
