@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ALADdXC8P1PuWXLJnbjqEhnOUma+Bc/FstDtKHoZS0g=",
+  "Hash": "PLUA0g6pP+SCAGvvV+WWo+7Y7KGaJ73AqICS3lJ9jDQ=",
   "Source": "FilesExchanger.Host",
   "BasePath": "_content/FilesExchanger.Host",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FilesExchanger.Host/wwwroot",
       "Source": "FilesExchanger.Host",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/FilesExchanger.Host.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/FilesExchanger.Host.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/FilesExchanger.Host.js",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/FilesExchanger.Host.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/FilesExchanger.Host.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/FilesExchanger.Host.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/FilesExchanger.Host.min.js",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/FilesExchanger.Host.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Collections.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Collections.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Collections.js",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Collections.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Collections.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Collections.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Collections.min.js",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Collections.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Control.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Control.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Control.js",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Control.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Control.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Control.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Control.min.js",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Control.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Core.JavaScript/Runtime.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Core.JavaScript/Runtime.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Core.JavaScript/Runtime.js",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Core.JavaScript/Runtime.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Core.JavaScript/Runtime.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Core.JavaScript/Runtime.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Core.JavaScript/Runtime.min.js",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Core.JavaScript/Runtime.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.JavaScript/Cookies.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.JavaScript/Cookies.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.JavaScript/Cookies.js",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.JavaScript/Cookies.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Main.js",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Main.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Main.min.js",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Main.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main/AnimFrame.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main/AnimFrame.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Main/AnimFrame.js",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Main/AnimFrame.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main/AnimFrame.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main/AnimFrame.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Main/AnimFrame.min.js",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Main/AnimFrame.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main/Json.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main/Json.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Main/Json.js",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Main/Json.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main/Json.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Main/Json.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Main/Json.min.js",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Main/Json.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Sitelets.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Sitelets.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Sitelets.js",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Sitelets.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Sitelets.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Sitelets.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Sitelets.min.js",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Sitelets.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.UI.js",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.UI.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.UI.min.js",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.UI.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI.Templating.Runtime.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI.Templating.Runtime.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.UI.Templating.Runtime.js",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.UI.Templating.Runtime.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI.Templating.Runtime.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI.Templating.Runtime.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.UI.Templating.Runtime.min.js",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.UI.Templating.Runtime.min.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI/closest.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI/closest.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.UI/closest.js",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.UI/closest.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI/h5f.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.UI/h5f.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.UI/h5f.js",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.UI/h5f.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Web.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Web.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Web.js",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/Scripts/WebSharper/WebSharper.Web.js"
     },
     {
-      "Identity": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Web.min.js",
+      "Identity": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/Scripts/WebSharper/WebSharper.Web.min.js",
       "SourceId": "FilesExchanger.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
+      "ContentRoot": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/wwwroot/",
       "BasePath": "_content/FilesExchanger.Host",
       "RelativePath": "Scripts/WebSharper/WebSharper.Web.min.js",
       "AssetKind": "All",

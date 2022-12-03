@@ -1,8 +1,18 @@
 namespace FilesExchanger.Host.Handlers
 
+open FilesExchanger.Connector.WebSocketsClient
 open WebSharper
+open FilesExchanger.Application.Tools
 
-(*module TestConnectHandler =
+module TestConnectHandler =
     [<Rpc>]
-    let TestConnect url =
-        1*)
+    let TestConnect ipPort deviceName =
+        async {
+            let url = IpTools.BuildWebSocketAddress ipPort
+            
+            let wsClient = WebSocketClientContext(url)
+            
+            wsClient.SendString deviceName |> ignore
+            
+            return url
+        }

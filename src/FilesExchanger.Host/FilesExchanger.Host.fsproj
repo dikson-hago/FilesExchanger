@@ -7,7 +7,14 @@
   <ItemGroup>
     <Compile Include="Handlers\SendFilesHandler.fs" />
     <Compile Include="Handlers\TestConnectHandler.fs" />
-    <Compile Include="Handlers\GetFilesHandler.fs" />
+    <Compile Include="Handlers\DownloadFilesHandler.fs" />
+    <Compile Include="Handlers\GenerateDeviceNameHandler.fs" />
+    <Compile Include="JsModules\Store\IpAddressStore.fs" />
+    <Compile Include="JsModules\Templates\JsTemplates.fs" />
+    <Compile Include="JsModules\SendFileJsModule.fs" />
+    <Compile Include="JsModules\DownloadFileJsModule.fs" />
+    <Compile Include="JsModules\TestConnectionJsModule.fs" />
+    <Compile Include="JsModules\DeviceNameJsModule.fs" />
     <Compile Include="ServerApi.fs" />
     <Compile Include="Client.fs" />
     <Compile Include="Site.fs" />

@@ -11,9 +11,14 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F9DD1E6B-912B-4B6D-850C-0F5850B2990A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.TestConsoleSuave", "FilesExchanger.TestConsoleSuave\FilesExchanger.TestConsoleSuave.fsproj", "{BCAD25DF-D548-41AC-8BC2-7238D1F499D8}"
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.Connector", "src\FilesExchanger.Connector\FilesExchanger.Connector.fsproj", "{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.TestConsoleSuave", "test\FilesExchanger.TestConsoleSuave\FilesExchanger.TestConsoleSuave.fsproj", "{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{5012DEA1-DDAE-4257-9514-69503CEE6AB8}"
+	ProjectSection(SolutionItems) = preProject
+		common\Plan.md = common\Plan.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,8 +31,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{615424EF-F773-4FDA-AC43-14BF98E73C3B} = {8CD62313-7FD1-41A0-8C48-9EC69CDA1DF4}
 		{4E4C0476-56EC-4E85-8B7E-C92146C9D698} = {8CD62313-7FD1-41A0-8C48-9EC69CDA1DF4}
-		{BCAD25DF-D548-41AC-8BC2-7238D1F499D8} = {F9DD1E6B-912B-4B6D-850C-0F5850B2990A}
 		{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F} = {8CD62313-7FD1-41A0-8C48-9EC69CDA1DF4}
+		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144} = {F9DD1E6B-912B-4B6D-850C-0F5850B2990A}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{615424EF-F773-4FDA-AC43-14BF98E73C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,13 +43,13 @@ Global
 		{4E4C0476-56EC-4E85-8B7E-C92146C9D698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E4C0476-56EC-4E85-8B7E-C92146C9D698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E4C0476-56EC-4E85-8B7E-C92146C9D698}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BCAD25DF-D548-41AC-8BC2-7238D1F499D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCAD25DF-D548-41AC-8BC2-7238D1F499D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCAD25DF-D548-41AC-8BC2-7238D1F499D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCAD25DF-D548-41AC-8BC2-7238D1F499D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

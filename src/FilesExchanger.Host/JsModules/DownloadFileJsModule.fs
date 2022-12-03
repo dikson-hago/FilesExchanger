@@ -9,12 +9,13 @@ open WebSharper.UI.Notation
 [<JavaScript>]
 module DownloadFileJsModule =
     let Run() =
-        let rvReversed = Var.Create ""
+        let downloadResult = Var.Create ""
         JsTemplates.MainTemplate.DownloadFileForm()
             .Download(fun e ->
                 async {
-                    rvReversed := "res"
+                    downloadResult := "ok"
                 }
                 |> Async.StartImmediate
             )
+            .DownloadFileResponse(downloadResult.View)
             .Doc()

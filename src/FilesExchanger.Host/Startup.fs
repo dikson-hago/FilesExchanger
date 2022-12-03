@@ -6,10 +6,12 @@ open FilesExchanger.Host
 
 [<EntryPoint>]
 let main args =
-    let builder = WebApplication.CreateBuilder(args)
+    let builder = WebApplication
+                      .CreateBuilder(args)
     
     // Add services to the container.
-    builder.Services.AddWebSharper()
+    builder.Services
+        .AddWebSharper()
         .AddAuthentication("WebSharper")
         .AddCookie("WebSharper", fun options -> ())
     |> ignore

@@ -57,18 +57,23 @@
     </nav>
     <div class="container">
         <div ws-replace="Body">
-            <div ws-template="ConnectionForm">
-                <input ws-var="TextToReverse" placeholder="Target device name"/>
-                <button ws-onclick="TryConnect">Connect</button>
-                <p><div class="jumbotron"><h3>${ConnectionReserved}</h3></div></p>
+            <div ws-template="GenerateDeviceNameForm">
+                <button ws-onclick="GenerateDeviceName">GenerateDeviceName</button>
+                <p><div class="jumbotron"><h3>${DeviceNameResponse}</h3></div></p>
             </div>
-            <div ws-template="GetFileForm">
+            <div ws-template="TryConnectForm">
+                <input ws-var="Address" placeholder="Target device name"/>
+                <button ws-onclick="TryConnect">Connect</button>
+                <p><div class="jumbotron"><h3>${TestConnectionResponse}</h3></div></p>
+            </div>
+            <div ws-template="DownloadFileForm">
                 <button ws-onclick="Download">Download</button>
-                <p><div class="jumbotron"><h3>${DownloadFileState}</h3></div></p>
+                <p><div class="jumbotron"><h3>${DownloadFileResponse}</h3></div></p>
             </div>
             <div ws-template="SendFileForm">
-                <input ws-var="TextToReverse" placeholder="Enter file location"/>
+                <input ws-var="FileLocation" placeholder="Enter file location"/>
                 <button ws-onclick="OnSend">Send</button>
+                <p><div class="jumbotron"><h3>${SendFileResponse}</h3></div></p>
             </div>
         </div>
     </div>

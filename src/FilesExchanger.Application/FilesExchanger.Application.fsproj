@@ -9,6 +9,7 @@
     <Compile Include="FilesConvertor\FilesConvertorContext.fs" />
     <Compile Include="Cryptography\Rsa.fs" />
     <Compile Include="Compression\Haffman.fs" />
+    <Compile Include="Tools\IpTools.fs" />
   </ItemGroup>
 
 </Project>

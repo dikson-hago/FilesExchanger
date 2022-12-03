@@ -40,15 +40,17 @@ module Site =
     let HomePage ctx =
         Templating.Main ctx EndPoint.Home "Post" [
             h1 [] [text "Page for send files"]
-            div [] [client (Client.ConnectionModule())]
+            div [] [client (Client.DeviceNameModule())]
+            div [] [client (Client.TestConnectionModule())]
             div [] [client (Client.SendFileModule())]
         ]
 
     let AboutPage ctx =
         Templating.Main ctx EndPoint.About "Get" [
             h1 [] [text "Page for get files"]
-            div [] [client (Client.ConnectionModule())]
-            div [] [client (Client.GetFileModule())]
+            div [] [client (Client.DeviceNameModule())]
+            div [] [client (Client.TestConnectionModule())]
+            div [] [client (Client.DownloadFileModule())]
         ]
 
     [<Website>]

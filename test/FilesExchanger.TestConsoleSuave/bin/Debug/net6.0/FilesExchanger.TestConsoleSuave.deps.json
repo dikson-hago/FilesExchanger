@@ -9,6 +9,7 @@
       "FilesExchanger.TestConsoleSuave/1.0.0": {
         "dependencies": {
           "FSharp.Core": "6.0.1",
+          "FilesExchanger.Application": "1.0.0",
           "Suave": "2.6.2"
         },
         "runtime": {
@@ -74,6 +75,14 @@
             "fileVersion": "2.6.2.0"
           }
         }
+      },
+      "FilesExchanger.Application/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "6.0.1"
+        },
+        "runtime": {
+          "FilesExchanger.Application.dll": {}
+        }
       }
     }
   },
@@ -96,6 +105,11 @@
       "sha512": "sha512-JNTsgb3FrFnvsp7G93Y9XLIGVa47fG4GZ8un/+/iMMVBTRWl8l6Rlnqjo/PsQP6NojtkrLEM4SLz9AhfQIPNag==",
       "path": "suave/2.6.2",
       "hashPath": "suave.2.6.2.nupkg.sha512"
+    },
+    "FilesExchanger.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
