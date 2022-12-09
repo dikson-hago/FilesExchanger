@@ -16,7 +16,9 @@ module Client =
             
     let DownloadFileModule() = DownloadFileJsModule.Run()
             
-    let TestConnectionModule () = TestConnectionJsModule.Run()
+    let TestConnectionForSendModule () = FirstConnectionForSendJsModule.Run()
+    
+    let TestConnectionForReceiveModule () = FirstConnectionForReceiveJsModule.Run()
         
     let DeviceNameModule () = DeviceNameJsModule.Run()
             

@@ -45,6 +45,9 @@
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/tr/FSharp.Core.resources.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/zh-Hans/FSharp.Core.resources.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/zh-Hant/FSharp.Core.resources.dll
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.Tools.dll
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.Tools.pdb
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.Tools.xml
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/obj/Debug/net6.0/FilesExchanger.TestConsoleSuave.fsproj.AssemblyReference.cache
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/obj/Debug/net6.0/FilesExchanger.TestConsoleSuave.AssemblyInfoInputs.cache
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/obj/Debug/net6.0/FilesExchanger.TestConsoleSuave.AssemblyInfo.fs
@@ -52,6 +55,7 @@
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/obj/Debug/net6.0/FilesExchanger.TestConsoleSuave.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/obj/Debug/net6.0/FilesExchanger.TestConsoleSuave.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/obj/Debug/net6.0/FilesExchanger.TestConsoleSuave.genruntimeconfig.cache
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.Application.dll
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.Application.pdb
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.Application.xml
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.NetworkTools.dll
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.NetworkTools.pdb
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/FilesExchanger.NetworkTools.xml
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/bin/Debug/net6.0/Newtonsoft.Json.dll

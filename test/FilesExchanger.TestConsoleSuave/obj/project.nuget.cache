@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/miUpQuG7uFoJVctHf3fJJmb9bd8xytYmt3BQTpOQZN+Cf/M8Ojial9pn42FWiJP2g/kQsXCQzRMbaf6Xc08Pw==",
+  "dgSpecHash": "ZVVgm6OzH6FJpPVm4Dj5oV2rzMiE6YFjI5O8PC9Aj5X84wCO+PbF4Q8OPw1vmGNneiBWP4kcVjTMzLrKT0W1ZA==",
   "success": true,
   "projectFilePath": "/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/FilesExchanger.TestConsoleSuave.fsproj",
   "expectedPackageFiles": [
     "/home/user12/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512",
+    "/home/user12/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512",
     "/home/user12/.nuget/packages/suave/2.6.2/suave.2.6.2.nupkg.sha512"
   ],
   "logs": []

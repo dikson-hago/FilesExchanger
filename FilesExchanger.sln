@@ -7,18 +7,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8CD62313-7FD
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.Host", "src\FilesExchanger.Host\FilesExchanger.Host.fsproj", "{615424EF-F773-4FDA-AC43-14BF98E73C3B}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.Application", "src\FilesExchanger.Application\FilesExchanger.Application.fsproj", "{4E4C0476-56EC-4E85-8B7E-C92146C9D698}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.Tools", "src\FilesExchanger.Tools\FilesExchanger.Tools.fsproj", "{4E4C0476-56EC-4E85-8B7E-C92146C9D698}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F9DD1E6B-912B-4B6D-850C-0F5850B2990A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.Connector", "src\FilesExchanger.Connector\FilesExchanger.Connector.fsproj", "{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.NetworkTools", "src\FilesExchanger.NetworkTools\FilesExchanger.NetworkTools.fsproj", "{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.TestConsoleSuave", "test\FilesExchanger.TestConsoleSuave\FilesExchanger.TestConsoleSuave.fsproj", "{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{5012DEA1-DDAE-4257-9514-69503CEE6AB8}"
 	ProjectSection(SolutionItems) = preProject
 		common\Plan.md = common\Plan.md
+		common\.gitignore = common\.gitignore
 	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.TestWebSockets", "test\FilesExchanger.TestWebSockets\FilesExchanger.TestWebSockets.fsproj", "{6B73537D-939D-4D35-BCA5-6D65BF090497}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.ConsoleTestApp", "test\FilesExchanger.ConsoleTestApp\FilesExchanger.ConsoleTestApp.fsproj", "{8C4D5A11-11FA-4549-86DC-8CAF667D9FC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,8 @@ Global
 		{4E4C0476-56EC-4E85-8B7E-C92146C9D698} = {8CD62313-7FD1-41A0-8C48-9EC69CDA1DF4}
 		{6A30F4D0-7D46-4494-8B98-1E53F6FF2F4F} = {8CD62313-7FD1-41A0-8C48-9EC69CDA1DF4}
 		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144} = {F9DD1E6B-912B-4B6D-850C-0F5850B2990A}
+		{6B73537D-939D-4D35-BCA5-6D65BF090497} = {F9DD1E6B-912B-4B6D-850C-0F5850B2990A}
+		{8C4D5A11-11FA-4549-86DC-8CAF667D9FC6} = {F9DD1E6B-912B-4B6D-850C-0F5850B2990A}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{615424EF-F773-4FDA-AC43-14BF98E73C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -51,5 +58,13 @@ Global
 		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B73537D-939D-4D35-BCA5-6D65BF090497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B73537D-939D-4D35-BCA5-6D65BF090497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B73537D-939D-4D35-BCA5-6D65BF090497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B73537D-939D-4D35-BCA5-6D65BF090497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4D5A11-11FA-4549-86DC-8CAF667D9FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4D5A11-11FA-4549-86DC-8CAF667D9FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4D5A11-11FA-4549-86DC-8CAF667D9FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4D5A11-11FA-4549-86DC-8CAF667D9FC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

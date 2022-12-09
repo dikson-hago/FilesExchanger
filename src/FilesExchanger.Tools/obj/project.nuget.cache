@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wqyyTYAd1mxPkdwygxHnaz6AExj2WuSQRRdSHLWLY5g6PvgB5to+Yhawd0GHT7aNm/pZRruHfVyYmsGwm1Mu3g==",
+  "success": true,
+  "projectFilePath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/FilesExchanger.Tools.fsproj",
+  "expectedPackageFiles": [
+    "/home/user12/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

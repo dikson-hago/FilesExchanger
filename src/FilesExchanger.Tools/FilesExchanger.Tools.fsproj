@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace>FilesExchanger.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="FilesConvertorTools\FilesConvertorContext.fs" />
+    <Compile Include="CryptographyTools\Rsa.fs" />
+    <Compile Include="CompressionTools\Haffman.fs" />
+    <Compile Include="IpConvertorTools\IpAddressConvertor.fs" />
+  </ItemGroup>
+
+</Project>

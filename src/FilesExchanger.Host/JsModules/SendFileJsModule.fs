@@ -1,7 +1,6 @@
 namespace FilesExchanger.Host.JsModules
 
 open FilesExchanger.Host.InternalContext
-open FilesExchanger.Host.JsModules.Store
 open FilesExchanger.Host.JsModules.Templates
 
 open WebSharper
@@ -15,9 +14,9 @@ module SendFileJsModule =
         JsTemplates.MainTemplate.SendFileForm()
             .OnSend(fun e ->
                 async {
+                    let filePath = e.Vars.FileLocation.Value
                     try
-                        let filePath = e.Vars.FileLocation.Value
-                        let! res = SendFilesHandler.Send IpAddressStore.externalIpAddress filePath
+                        let! res = SendFilesHandler.Send filePath
                         sendFileResponse := "ok"
                     with 
                        | :? System.Exception as ex -> sendFileResponse := "error"

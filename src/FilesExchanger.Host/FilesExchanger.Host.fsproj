@@ -5,17 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Handlers\Models\ExternalIpInfo.fs" />
     <Compile Include="Handlers\SendFilesHandler.fs" />
-    <Compile Include="Handlers\TestConnectHandler.fs" />
     <Compile Include="Handlers\DownloadFilesHandler.fs" />
     <Compile Include="Handlers\GenerateDeviceNameHandler.fs" />
-    <Compile Include="JsModules\Store\IpAddressStore.fs" />
+    <Compile Include="Handlers\FirstConnectionForReceiveHandler.fs" />
+    <Compile Include="Handlers\FirstConnectionForSendHandler.fs" />
     <Compile Include="JsModules\Templates\JsTemplates.fs" />
     <Compile Include="JsModules\SendFileJsModule.fs" />
     <Compile Include="JsModules\DownloadFileJsModule.fs" />
-    <Compile Include="JsModules\TestConnectionJsModule.fs" />
     <Compile Include="JsModules\DeviceNameJsModule.fs" />
-    <Compile Include="ServerApi.fs" />
+    <Compile Include="JsModules\FirstConnectionForReceiveJsModule.fs" />
+    <Compile Include="JsModules\FirstConnectionForSendJsModule.fs" />
     <Compile Include="Client.fs" />
     <Compile Include="Site.fs" />
     <Compile Include="Startup.fs" />
@@ -33,8 +34,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FilesExchanger.Application\FilesExchanger.Application.fsproj" />
-    <ProjectReference Include="..\FilesExchanger.Connector\FilesExchanger.Connector.fsproj" />
+    <ProjectReference Include="..\FilesExchanger.Tools\FilesExchanger.Tools.fsproj" />
+    <ProjectReference Include="..\FilesExchanger.NetworkTools\FilesExchanger.NetworkTools.fsproj" />
   </ItemGroup>
 
 </Project>

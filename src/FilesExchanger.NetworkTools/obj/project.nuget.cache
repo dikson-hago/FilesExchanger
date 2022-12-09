@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tqnpmTtoWDwt5U1i4X2uESEJe/5Eq4VE0v38DhYyAJgcL+p99VAqWBPHiDCc5513hWwy/ryJ19d39fp8MvWPrA==",
+  "success": true,
+  "projectFilePath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.NetworkTools/FilesExchanger.NetworkTools.fsproj",
+  "expectedPackageFiles": [
+    "/home/user12/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512",
+    "/home/user12/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512",
+    "/home/user12/.nuget/packages/suave/2.6.2/suave.2.6.2.nupkg.sha512"
+  ],
+  "logs": []
+}

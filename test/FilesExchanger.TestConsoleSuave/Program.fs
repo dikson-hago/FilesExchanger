@@ -1,66 +1,32 @@
-﻿open FilesExchanger.Application.FilesConvertor
-open Suave
-open Suave.Operators
-open Suave.Filters
-open Suave.Logging
-open Suave.Sockets
-open Suave.Sockets.Control
-open Suave.WebSocket
+﻿open System.Text.Json
+open FilesExchanger.Application.FilesConvertor
+open FilesExchanger.Application.IpConvertor
+open FilesExchanger.Connector.Models
+open FilesExchanger.NetworkTools
 
-let mutable counter = 0
-let newFilePath = "/home/user12/Documents/Projects/git/FilesExchanger/test/testTo/test.txt"
-
-let createFile bytes =
-    FilesConvertorContext.BytesToFile newFilePath bytes
-
-let ws (webSocket : WebSocket) (context: HttpContext) =
-    socket {
-      let mutable loop = true
-      
-
-      while loop do
-            let! msg = webSocket.read()
-
-            match msg with
-            | (Text, data, true) ->
-                if counter = 0 then 
-                    let str = UTF8.toString data
-                    printfn "get message: %s" str
-                else
-                    createFile data
-                
-                // send response
-                let response = "ok"
-                let byteResponse =
-                    response
-                    |> System.Text.Encoding.ASCII.GetBytes
-                    |> ByteSegment
-                    
-                do! webSocket.send Text byteResponse true
-                
-                // increase counter
-                counter <- counter + 1
-                if counter = 2 then
-                    loop <- true
-            | (Close, _, _) ->
-                let emptyResponse = [||] |> ByteSegment
-                do! webSocket.send Close emptyResponse true
-                loop <- false
-            | _ -> ()
-    }
-
-let app: WebPart =
-    choose [
-        handShake ws
-    ]
-     
-let myCfg =
-  { defaultConfig with
-      bindings = [ HttpBinding.createSimple HTTP "127.0.0.1" 8082 ]
-    }
+let targetFolder = "/home/user12/Documents/Projects/git/FilesExchanger/test/testTo"
+let localIp = "127.0.0.1"
+let localPort = 8082
 
 [<EntryPoint>]
-let main _ = 
-    // startWebServer {defaultConfig with logger = Targets.create Verbose [||] } app
-    startWebServer myCfg app
+let main _ =
+    let res = IpAddressConvertor.encrypt localIp localPort
+    printfn $"address: {res}"
+    
+    for i in 1 .. 100 do 
+        let ws = WebSocketNetworkContext()
+        let res = ws.GetModel localIp localPort
+        
+        if res.MessageType = WsMessageType.FirstConnection then
+            printfn $"get message: {res.StringMessage}"
+        else
+            let fileName = res.StringMessage
+            let filePath = FilesConvertorContext.ConcatFolderAndFile targetFolder fileName
+            FilesConvertorContext.BytesToFile filePath res.ByteMessage
+        
+    (*let res = IpAddressConvertor.encrypt localIp localPort
+    printfn $"address: {res}"
+    let (ip, port) = IpAddressConvertor.decrypt res*)
+    ///startWebServer {defaultConfig with logger = Targets.create Verbose [||] } app
+    //startWebServer myCfg app
     0

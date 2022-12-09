@@ -9,8 +9,8 @@
       "FilesExchanger.Host/1.0.0": {
         "dependencies": {
           "FSharp.Core": "6.0.6",
-          "FilesExchanger.Application": "1.0.0",
-          "FilesExchanger.Connector": "1.0.0",
+          "FilesExchanger.NetworkTools": "1.0.0",
+          "FilesExchanger.Tools": "1.0.0",
           "WebSharper": "6.0.4.240",
           "WebSharper.AspNetCore": "6.0.4.240",
           "WebSharper.FSharp": "6.0.4.240",
@@ -177,6 +177,14 @@
             "assetType": "runtime",
             "assemblyVersion": "4.0.2.0",
             "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.2": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.2.27524"
           }
         }
       },
@@ -851,21 +859,23 @@
           }
         }
       },
-      "FilesExchanger.Application/1.0.0": {
+      "FilesExchanger.NetworkTools/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "6.0.6",
+          "FilesExchanger.Tools": "1.0.0",
+          "Newtonsoft.Json": "13.0.2",
+          "Suave": "2.6.2"
+        },
+        "runtime": {
+          "FilesExchanger.NetworkTools.dll": {}
+        }
+      },
+      "FilesExchanger.Tools/1.0.0": {
         "dependencies": {
           "FSharp.Core": "6.0.6"
         },
         "runtime": {
-          "FilesExchanger.Application.dll": {}
-        }
-      },
-      "FilesExchanger.Connector/1.0.0": {
-        "dependencies": {
-          "FSharp.Core": "6.0.6",
-          "Suave": "2.6.2"
-        },
-        "runtime": {
-          "FilesExchanger.Connector.dll": {}
+          "FilesExchanger.Tools.dll": {}
         }
       }
     }
@@ -1015,6 +1025,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "path": "newtonsoft.json/13.0.2",
+      "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -1506,12 +1523,12 @@
       "path": "websharper.ui/6.0.5.240",
       "hashPath": "websharper.ui.6.0.5.240.nupkg.sha512"
     },
-    "FilesExchanger.Application/1.0.0": {
+    "FilesExchanger.NetworkTools/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "FilesExchanger.Connector/1.0.0": {
+    "FilesExchanger.Tools/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

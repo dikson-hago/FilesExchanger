@@ -41,7 +41,7 @@ module Site =
         Templating.Main ctx EndPoint.Home "Post" [
             h1 [] [text "Page for send files"]
             div [] [client (Client.DeviceNameModule())]
-            div [] [client (Client.TestConnectionModule())]
+            div [] [client (Client.TestConnectionForSendModule())]
             div [] [client (Client.SendFileModule())]
         ]
 
@@ -49,7 +49,7 @@ module Site =
         Templating.Main ctx EndPoint.About "Get" [
             h1 [] [text "Page for get files"]
             div [] [client (Client.DeviceNameModule())]
-            div [] [client (Client.TestConnectionModule())]
+            div [] [client (Client.TestConnectionForReceiveModule())]
             div [] [client (Client.DownloadFileModule())]
         ]
 

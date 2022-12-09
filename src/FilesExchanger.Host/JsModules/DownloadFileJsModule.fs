@@ -1,5 +1,6 @@
 namespace FilesExchanger.Host.JsModules
 
+open FilesExchanger.Host.Handlers
 open FilesExchanger.Host.JsModules.Templates
 
 open WebSharper
@@ -13,6 +14,10 @@ module DownloadFileJsModule =
         JsTemplates.MainTemplate.DownloadFileForm()
             .Download(fun e ->
                 async {
+                    let filePath = e.Vars.TargetFolderLocation.Value
+                    
+                    let! res = DownloadFilesHandler.DownloadFile filePath
+                    
                     downloadResult := "ok"
                 }
                 |> Async.StartImmediate

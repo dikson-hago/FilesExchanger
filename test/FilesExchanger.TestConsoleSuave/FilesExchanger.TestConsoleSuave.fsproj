@@ -14,7 +14,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\FilesExchanger.Application\FilesExchanger.Application.fsproj" />
+      <ProjectReference Include="..\..\src\FilesExchanger.NetworkTools\FilesExchanger.NetworkTools.fsproj" />
+      <ProjectReference Include="..\..\src\FilesExchanger.Tools\FilesExchanger.Tools.fsproj" />
     </ItemGroup>
 
 </Project>
