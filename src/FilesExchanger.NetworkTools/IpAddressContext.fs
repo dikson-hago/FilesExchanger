@@ -8,8 +8,6 @@ module IpAddressContext =
     
     let BuildAddressByIpAndPort ip port = ip + ":" + (port |> string)
     
-    let GetLocalIpAndPortForSuave() = ("127.0.0.1", 8082)
-    
     let GetLocalIpAddressAndPort() =
         if System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable() = false
             then ("", 0)
@@ -20,5 +18,9 @@ module IpAddressContext =
                                  |> Array.find(fun ip -> ip.AddressFamily = AddressFamily.InterNetwork)
             
             (localIpAddress |> string, 8082)
+    
+    let GetLocalIpAndPortForSuave() = GetLocalIpAddressAndPort() //("127.0.0.1", 8082)
+    
+    
             
 
