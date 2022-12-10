@@ -1,16 +1,27 @@
 namespace FilesExchanger.Connector.Suave
 
-open System.Text
+open FilesExchanger.NetworkTools
+open FilesExchanger.NetworkTools.Models
+
 open System.Threading
 open Suave
 open Suave.Sockets
 open Suave.Sockets.Control
 open Suave.WebSocket
 
+
 module SuaveContext =    
     let mutable gotBytes = Array.empty
     
     let mutable cts = new CancellationTokenSource()
+    
+    let mutable responseMessage = {
+            StringMessage = "";
+            ByteMessage = Array.empty
+            ByteEncryptMessage = Array.empty
+            BigIntArrMessage = Array.empty;
+            MessageType = WsMessageType.StatusOK
+        }
 
     let ws (webSocket : WebSocket) (context: HttpContext) =
         socket {
@@ -23,16 +34,11 @@ module SuaveContext =
                 | (Text, data, true) ->
                     gotBytes <- data
                     
-                    //printfn "get string: %s" (data |> Encoding.UTF8.GetString)
-                    
                     // send response
-                    let response = "ok from host"
                     let byteResponse =
-                        response
-                        |> System.Text.Encoding.ASCII.GetBytes
-                        |> ByteSegment
+                        WsMessageModelAndBytesConvertor.ConvertModelToBytes responseMessage
                         
-                    do! webSocket.send Text byteResponse true
+                    do! webSocket.send Text (byteResponse |> ByteSegment) true
                     
                     loop <- false
                     cts.Cancel()
@@ -44,8 +50,10 @@ module SuaveContext =
         }
 
         
-    let run ip port =
+    let run ip port respMessage =
         try
+            responseMessage <- respMessage
+            
             cts <- new CancellationTokenSource()
             
             gotBytes <- Array.empty

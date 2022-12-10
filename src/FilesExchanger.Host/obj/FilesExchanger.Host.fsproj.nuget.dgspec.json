@@ -4,6 +4,61 @@
     "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/FilesExchanger.Host.fsproj": {}
   },
   "projects": {
+    "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Domain/FilesExchanger.Domain.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Domain/FilesExchanger.Domain.fsproj",
+        "projectName": "FilesExchanger.Domain",
+        "projectPath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Domain/FilesExchanger.Domain.fsproj",
+        "packagesPath": "/home/user12/.nuget/packages/",
+        "outputPath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/user12/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[6.0.1, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.110/sdk/6.0.110/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/FilesExchanger.Host.fsproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,6 +81,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Domain/FilesExchanger.Domain.fsproj": {
+                "projectPath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Domain/FilesExchanger.Domain.fsproj"
+              },
               "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.NetworkTools/FilesExchanger.NetworkTools.fsproj": {
                 "projectPath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.NetworkTools/FilesExchanger.NetworkTools.fsproj"
               },

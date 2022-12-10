@@ -1,12 +1,11 @@
 namespace FilesExchanger.Host.InternalContext
 
-open System.Net.WebSockets
 open FilesExchanger.Application.Compression
 open FilesExchanger.Application.FilesConvertor
-open FilesExchanger.Connector.WebSocketsClient
 open FilesExchanger.Host.Handlers.Models
-open FilesExchanger.Connector.Models
+open FilesExchanger.NetworkTools.Models
 
+open FilesExchanger.Tools.CryptographyTools.Rsa
 open FilesExchanger.NetworkTools
 open WebSharper
 
@@ -14,10 +13,16 @@ module SendFilesHandler =
     let ConvertBytes fileBytes =
         Haffman.compressBytes fileBytes
         
-    let ConvertToSendFilesMessage (bytes : byte[]) (fileName : string) =
+    let EncryptBytes (bytes: byte[]) =
+        let (e, n) = RsaKeysInfo.getExternalKeysForEncrypt()
+        let encryptedBytes = EncryptorContext.RsaContext.Encrypt e n bytes
+        encryptedBytes
+        
+    let ConvertToSendFilesMessage (bytes : byte[][]) (fileName : string) =
         let model = {
             StringMessage = fileName;
-            ByteMessage = bytes
+            ByteMessage = Array.empty;
+            ByteEncryptMessage = bytes;
             BigIntArrMessage = Array.empty;
             MessageType = WsMessageType.File
         }
@@ -32,20 +37,25 @@ module SendFilesHandler =
     
     [<Rpc>]
     let Send filePath =
-        async {            
+        async {
+            // get bytes of file
             let filesBytes = FilesConvertorContext.FileToBytes filePath
-            let convertedBytes = ConvertBytes filesBytes
+            
+            // encrypt bytes
+            let encryptedBytes = EncryptBytes filesBytes
+            
+            // get file name
             let fileName = GetFileNameByFilePath filePath
             
-            let messageModel = ConvertToSendFilesMessage convertedBytes fileName
+            // build message model
+            let messageModel = ConvertToSendFilesMessage encryptedBytes fileName
             
+            // build WebSocket context
             let wsContext = WebSocketNetworkContext()
             let wsAddress = ExternalIpInfo.GetWebSocketAddress()
             
+            // send message model
             let res = wsContext.SendModel messageModel wsAddress
-            
-            (*let wsClient = WebSocketSendContext(ExternalIpInfo.GetWebSocketAddress())
-            wsClient.SendRequest convertedBytes |> ignore*)
             
             return res
         }

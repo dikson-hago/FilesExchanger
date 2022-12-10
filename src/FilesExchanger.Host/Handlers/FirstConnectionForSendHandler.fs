@@ -1,8 +1,9 @@
 namespace FilesExchanger.Host.Handlers
 
-open FilesExchanger.Connector.Models
+open FilesExchanger.NetworkTools.Models
 open FilesExchanger.Host.Handlers.Models
 open FilesExchanger.NetworkTools
+open FilesExchanger.Tools.CryptographyTools.Rsa
 
 open WebSharper
 
@@ -11,7 +12,8 @@ module FirstConnectionForSendHandler =
     let ConvertToFirstConnectionMessage (message : string) =
         let model = {
             StringMessage = message;
-            ByteMessage = Array.empty
+            ByteMessage = Array.empty;
+            ByteEncryptMessage = Array.empty;
             BigIntArrMessage = Array.empty;
             MessageType = WsMessageType.FirstConnection
         }
@@ -32,7 +34,12 @@ module FirstConnectionForSendHandler =
             let webSocketContext = WebSocketNetworkContext()
             let wsAddress = ExternalIpInfo.GetWebSocketAddress()
             
+            // send message for first connection
             let res = webSocketContext.SendModel messageModel wsAddress
             
+            // set external keys
+            RsaKeysInfo.setExternalKeys
+                res.BigIntArrMessage.[0] res.BigIntArrMessage.[1]
+             
             return res
         }

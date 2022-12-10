@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eBcVJeMgBRndjbtWX7W+3eLy66PloCV2t76QIlXVQ1DhTphWtjKAWAPan1zBegPCEJywFfat2VCMfVBpVk76oQ==",
+  "dgSpecHash": "wM+KbGUnVOFpuKySQuRyQ2afyBMw9+X6Fff+2WUSM0tSDxiz9Ar6l++QpqybVWTUHxvu/VrklRH7QlTdnO0dNg==",
   "success": true,
   "projectFilePath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/FilesExchanger.Host.fsproj",
   "expectedPackageFiles": [

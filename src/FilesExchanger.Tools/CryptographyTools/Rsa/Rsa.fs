@@ -1,4 +1,4 @@
-namespace FilesExchanger.Application.Cryptography
+namespace FilesExchanger.Tools.CryptographyTools.Rsa
 
 open System
 
@@ -9,11 +9,11 @@ module Rsa =
             for _ in 1L..e do midres <- ((midres % n) * m) % n
             midres
             
-        let encrypt e n m = [for num in m -> sqrMod num e n]
+        let encrypt e n message = [for num in message -> sqrMod num e n]
 
-        let decrypt  d n c = [for num in c -> sqrMod num d n]
+        let decrypt d n encryptMessage = [for num in encryptMessage -> sqrMod num d n]
 
-    let init _ =
+    let init() =
         let maxRandomValue = 10000
         let minRandomValue = 300
 

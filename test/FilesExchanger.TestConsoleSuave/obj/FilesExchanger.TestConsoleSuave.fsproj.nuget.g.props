@@ -14,6 +14,8 @@
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/user12/.nuget/packages/fsharp.core/6.0.1</PkgFSharp_Core>
+    <PkgWebSharper Condition=" '$(PkgWebSharper)' == '' ">/home/user12/.nuget/packages/websharper/6.0.4.240</PkgWebSharper>
+    <PkgWebSharper_FSharp Condition=" '$(PkgWebSharper_FSharp)' == '' ">/home/user12/.nuget/packages/websharper.fsharp/6.0.4.240</PkgWebSharper_FSharp>
     <PkgSuave Condition=" '$(PkgSuave)' == '' ">/home/user12/.nuget/packages/suave/2.6.2</PkgSuave>
   </PropertyGroup>
 </Project>

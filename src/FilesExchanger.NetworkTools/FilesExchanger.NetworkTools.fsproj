@@ -12,9 +12,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Include="Models\WsMessageModel.fs" />
+      <Compile Include="Models\WsMessageModel.fs" />  
+      <Compile Include="Tools\WsMessageModelAndBytesConvertor.fs" />
       <Compile Include="Receive\SuaveContext.fs" />
-      <Compile Include="Send\WebSocketSendContext.fs" />
+      <Compile Include="Send\WebSocketSendContext.fs" />  
       <Compile Include="WebSocketNetworkContext.fs" />
       <Compile Include="IpAddressContext.fs" />
     </ItemGroup>

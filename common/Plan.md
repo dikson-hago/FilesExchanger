@@ -3,3 +3,4 @@
 - Crypto (2 types)
 - Add .gitignore
 - find free port
+- add good responses

@@ -137,3 +137,6 @@
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.genruntimeconfig.cache
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Domain.dll
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Domain.pdb
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Domain.xml

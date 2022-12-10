@@ -1,4 +1,4 @@
-module FilesExchanger.Connector.Models
+namespace FilesExchanger.NetworkTools.Models
 
 type WsMessageType =
     | File
@@ -8,7 +8,9 @@ type WsMessageType =
     | StatusOK
 
 type WsMessageModel = {
-    ByteMessage : byte[];
+    ByteMessage : byte[]
+    
+    ByteEncryptMessage : byte[][]
     
     BigIntArrMessage : int64[];
     

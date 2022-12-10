@@ -21,19 +21,21 @@ type WebSocketSendContext (url) =
 
     let receive () =  
         lock lockConnection ( fun () ->
-            let rec readStream finalText endOfMessage =
+            let rec readStream (finalArray : byte[]) endOfMessage =
                 let buffer = ArraySegment(Array.zeroCreate<byte> 1024)
+                
+                let bufferArray = buffer.Array
                 
                 let result = ws.ReceiveAsync(buffer, CancellationToken.None)
                                  |> Async.AwaitTask
                                  |> Async.RunSynchronously
 
-                let text = finalText
-                           + Encoding.UTF8.GetString (buffer.Array |> Array.take result.Count)
+                let resArray = Array.append finalArray bufferArray
+                          
                 
-                if result.EndOfMessage then text
-                else readStream text true
-            readStream "" false
+                if result.EndOfMessage then resArray
+                else readStream resArray true
+            readStream Array.empty false
         )
         
     let receiveBytes () =  
@@ -63,8 +65,6 @@ type WebSocketSendContext (url) =
                         |> Async.AwaitTask |> Async.RunSynchronously
         // read response
         receive()
-
-    member this.SendRequest request = sendRequest request
     
     member this.SendBytes bytes = sendRequest bytes
     
