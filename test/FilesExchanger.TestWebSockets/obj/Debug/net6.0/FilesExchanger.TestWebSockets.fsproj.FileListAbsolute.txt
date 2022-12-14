@@ -4,6 +4,8 @@
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.TestWebSockets.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.TestWebSockets.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FSharp.Core.dll
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/Suave.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/cs/FSharp.Core.resources.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/de/FSharp.Core.resources.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/es/FSharp.Core.resources.dll
@@ -17,7 +19,10 @@
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/tr/FSharp.Core.resources.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/zh-Hans/FSharp.Core.resources.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/zh-Hant/FSharp.Core.resources.dll
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.NetworkTools.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.Tools.dll
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.NetworkTools.pdb
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.NetworkTools.xml
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.Tools.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.Tools.xml
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/obj/Debug/net6.0/FilesExchanger.TestWebSockets.fsproj.AssemblyReference.cache
@@ -27,8 +32,3 @@
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/obj/Debug/net6.0/FilesExchanger.TestWebSockets.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/obj/Debug/net6.0/FilesExchanger.TestWebSockets.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/obj/Debug/net6.0/FilesExchanger.TestWebSockets.genruntimeconfig.cache
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/Newtonsoft.Json.dll
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/Suave.dll
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.NetworkTools.dll
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.NetworkTools.pdb
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestWebSockets/bin/Debug/net6.0/FilesExchanger.NetworkTools.xml

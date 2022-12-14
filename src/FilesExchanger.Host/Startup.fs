@@ -1,7 +1,9 @@
+open System.Diagnostics
 open Microsoft.AspNetCore.Builder
 open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.DependencyInjection
 open WebSharper.AspNetCore
+
 open FilesExchanger.Host
 
 [<EntryPoint>]

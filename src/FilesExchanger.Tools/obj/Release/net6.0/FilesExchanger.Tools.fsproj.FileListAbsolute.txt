@@ -1,0 +1,10 @@
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/bin/Release/net6.0/FilesExchanger.Tools.deps.json
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/bin/Release/net6.0/FilesExchanger.Tools.dll
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/bin/Release/net6.0/FilesExchanger.Tools.pdb
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/bin/Release/net6.0/FilesExchanger.Tools.xml
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/obj/Release/net6.0/FilesExchanger.Tools.fsproj.AssemblyReference.cache
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/obj/Release/net6.0/FilesExchanger.Tools.AssemblyInfoInputs.cache
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/obj/Release/net6.0/FilesExchanger.Tools.AssemblyInfo.fs
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/obj/Release/net6.0/FilesExchanger.Tools.dll
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/obj/Release/net6.0/FilesExchanger.Tools.xml
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/obj/Release/net6.0/FilesExchanger.Tools.pdb

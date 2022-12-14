@@ -12,7 +12,13 @@
     <Compile Include="CryptographyTools\Rsa\RsaKeysModel.fs" />
     <Compile Include="CryptographyTools\Rsa\RsaKeysInfo.fs" />
     <Compile Include="CryptographyTools\EncryptorContext.fs" />
-    <Compile Include="CompressionTools\Haffman.fs" />
+    <Compile Include="CompressionTools\Haffman\BitList.fs" />
+    <Compile Include="CompressionTools\Haffman\HaffmanTree.fs" />
+    <Compile Include="CompressionTools\Haffman\HaffmanTreeBuilder.fs" />
+    <Compile Include="CompressionTools\Haffman\HaffmanTreeContext.fs" />
+    <Compile Include="CompressionTools\Haffman\Haffman.fs" />
+    <Compile Include="CompressionTools\Haffman\BitListConverter.fs" />
+    <Compile Include="CompressionTools\CompresstionContext.fs" />
     <Compile Include="IpConvertorTools\IpAddressConvertor.fs" />
   </ItemGroup>
 

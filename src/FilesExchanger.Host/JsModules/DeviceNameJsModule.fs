@@ -15,7 +15,7 @@ module DeviceNameJsModule =
             .GenerateDeviceName(fun e ->
                 async {
                     let! randName = GenerateDeviceNameHandler.GetName()
-                    deviceName := randName
+                    deviceName := $"Name: {randName}"
                 }
                 |> Async.StartImmediate
             )

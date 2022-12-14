@@ -1,5 +1,7 @@
 namespace FilesExchanger.Connector.Suave
 
+open System.Collections.Generic
+open FilesExchanger.Application.CompressionTools
 open FilesExchanger.NetworkTools
 open FilesExchanger.NetworkTools.Models
 
@@ -16,10 +18,10 @@ module SuaveContext =
     let mutable cts = new CancellationTokenSource()
     
     let mutable responseMessage = {
-            StringMessage = "";
             ByteMessage = Array.empty
-            ByteEncryptMessage = Array.empty
-            BigIntArrMessage = Array.empty;
+            CompressionInfo = {CodesInfoJson = Dictionary<byte, BitsListInfo>(); BitsAmount = 0};
+            EncryptionInfo = {E = 0; N = 0}
+            StringMessage = ""
             MessageType = WsMessageType.StatusOK
         }
 

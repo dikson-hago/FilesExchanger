@@ -1,6 +1,6 @@
-- Create exe + run browser (mutable)
-- Compression (2 types)
-- Crypto (2 types)
+- Create exe
+- Compression (1 type1)
+- Crypto test
 - Add .gitignore
 - find free port
-- add good responses
+- add exceptions in incorrect working

@@ -37,16 +37,16 @@
     filePath=e.Vars.Hole("filelocation").$1.Get();
     return Concurrency.TryWith(Concurrency.Delay(function()
     {
-     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.InternalContext.SendFilesHandler.Send:2082003078",[filePath]),function()
+     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.InternalContext.SendFilesHandler.Send:1324455088",[filePath]),function()
      {
-      sendFileResponse.Set("ok");
+      sendFileResponse.Set("Status of send: ok");
       return Concurrency.Zero();
      });
     }),function(a)
     {
      if(a instanceof Global.Error)
       {
-       sendFileResponse.Set("error");
+       sendFileResponse.Set("Status of send: error");
        return Concurrency.Zero();
       }
      else
@@ -71,16 +71,16 @@
     filePath=e.Vars.Hole("filelocation").$1.Get();
     return Concurrency.TryWith(Concurrency.Delay(function()
     {
-     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.InternalContext.SendFilesHandler.Send:2082003078",[filePath]),function()
+     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.InternalContext.SendFilesHandler.Send:1324455088",[filePath]),function()
      {
-      sendFileResponse.Set("ok");
+      sendFileResponse.Set("Status of send: ok");
       return Concurrency.Zero();
      });
     }),function(a)
     {
      if(a instanceof Global.Error)
       {
-       sendFileResponse.Set("error");
+       sendFileResponse.Set("Status of send: error");
        return Concurrency.Zero();
       }
      else
@@ -102,9 +102,9 @@
    {
     var filePath;
     filePath=e.Vars.Hole("targetfolderlocation").$1.Get();
-    return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.DownloadFilesHandler.DownloadFile:845023614",[filePath]),function()
+    return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.DownloadFilesHandler.DownloadFile:-1889579961",[filePath]),function()
     {
-     downloadResult.Set("ok");
+     downloadResult.Set("Status of getting file: ok");
      return Concurrency.Zero();
     });
    })),null);
@@ -124,9 +124,9 @@
    {
     var filePath;
     filePath=e.Vars.Hole("targetfolderlocation").$1.Get();
-    return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.DownloadFilesHandler.DownloadFile:845023614",[filePath]),function()
+    return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.DownloadFilesHandler.DownloadFile:-1889579961",[filePath]),function()
     {
-     downloadResult.Set("ok");
+     downloadResult.Set("Status of getting file: ok");
      return Concurrency.Zero();
     });
    })),null);
@@ -143,9 +143,9 @@
    var _;
    Concurrency.StartImmediate((_=null,Concurrency.Delay(function()
    {
-    return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.GenerateDeviceNameHandler.GetName:-704085249",[]),function(a)
+    return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.GenerateDeviceNameHandler.GetName:1725029699",[]),function(a)
     {
-     deviceName.Set(a);
+     deviceName.Set("Name: "+Global.String(a));
      return Concurrency.Zero();
     });
    })),null);
@@ -163,9 +163,9 @@
    var _;
    Concurrency.StartImmediate((_=null,Concurrency.Delay(function()
    {
-    return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.GenerateDeviceNameHandler.GetName:-704085249",[]),function(a)
+    return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.GenerateDeviceNameHandler.GetName:1725029699",[]),function(a)
     {
-     deviceName.Set(a);
+     deviceName.Set("Name: "+Global.String(a));
      return Concurrency.Zero();
     });
    })),null);
@@ -175,7 +175,7 @@
    $1:D
   }),_this))),(p=Handler.CompleteHoles(b.k,b.h,[]),(i=new TemplateInstance.New(p[1],FilesExchanger$Host_Templates.generatedevicenameform(p[0])),b.i=i,i))).get_Doc();
  };
- FirstConnectionForReceiveJsModule.Run$16$28=function(connectionStatus)
+ FirstConnectionForReceiveJsModule.Run$15$28=function(connectionStatus)
  {
   return function()
   {
@@ -184,7 +184,7 @@
    {
     return Concurrency.TryWith(Concurrency.Delay(function()
     {
-     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.FirstConnectionForReceiveHandler.Connect:-704085249",[]),function(a)
+     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.FirstConnectionForReceiveHandler.Connect:1725029699",[]),function(a)
      {
       connectionStatus.Set("Connected device: "+Global.String(a));
       return Concurrency.Zero();
@@ -216,7 +216,7 @@
    {
     return Concurrency.TryWith(Concurrency.Delay(function()
     {
-     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.FirstConnectionForReceiveHandler.Connect:-704085249",[]),function(a)
+     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.FirstConnectionForReceiveHandler.Connect:1725029699",[]),function(a)
      {
       connectionStatus.Set("Connected device: "+Global.String(a));
       return Concurrency.Zero();
@@ -249,7 +249,7 @@
     externalDeviceName=e.Vars.Hole("address").$1.Get();
     return Concurrency.TryWith(Concurrency.Delay(function()
     {
-     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.FirstConnectionForSendHandler.Connect:2082003078",[externalDeviceName]),function()
+     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.FirstConnectionForSendHandler.Connect:988911947",[externalDeviceName]),function()
      {
       testConnectionResponse.Set("Connected to device: "+Global.String(externalDeviceName));
       return Concurrency.Zero();
@@ -283,7 +283,7 @@
     externalDeviceName=e.Vars.Hole("address").$1.Get();
     return Concurrency.TryWith(Concurrency.Delay(function()
     {
-     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.FirstConnectionForSendHandler.Connect:2082003078",[externalDeviceName]),function()
+     return Concurrency.Bind((new AjaxRemotingProvider.New()).Async("FilesExchanger.Host:FilesExchanger.Host.Handlers.FirstConnectionForSendHandler.Connect:988911947",[externalDeviceName]),function()
      {
       testConnectionResponse.Set("Connected to device: "+Global.String(externalDeviceName));
       return Concurrency.Zero();

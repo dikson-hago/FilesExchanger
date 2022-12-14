@@ -1,9 +1,10 @@
 namespace FilesExchanger.Host.Handlers
 
+open System.Collections.Generic
+open FilesExchanger.Application.CompressionTools
 open FilesExchanger.NetworkTools
 open FilesExchanger.NetworkTools.Models
 open FilesExchanger.Tools.CryptographyTools.Rsa
-
 
 open WebSharper
 
@@ -14,12 +15,12 @@ module FirstConnectionForReceiveHandler =
         ()
     
     let InitConnectionResponse() =
-        let (e, d) = RsaKeysInfo.getOwnKeysForEncrypt()
+        let (e, n) = RsaKeysInfo.getOwnKeysForEncrypt()
         let model = {
+            ByteMessage = Array.empty
+            CompressionInfo = {CodesInfoJson = Dictionary<byte, BitsListInfo>(); BitsAmount = 0}
+            EncryptionInfo = {E = e; N = n}
             StringMessage = "";
-            ByteMessage = Array.empty;
-            ByteEncryptMessage = Array.empty;
-            BigIntArrMessage = [|e; d|];
             MessageType = WsMessageType.Key
         }
         model

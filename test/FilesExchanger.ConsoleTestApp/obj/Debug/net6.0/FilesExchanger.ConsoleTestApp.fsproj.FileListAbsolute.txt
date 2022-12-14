@@ -4,6 +4,7 @@
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/bin/Debug/net6.0/FilesExchanger.ConsoleTestApp.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/bin/Debug/net6.0/FilesExchanger.ConsoleTestApp.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/bin/Debug/net6.0/FSharp.Core.dll
+/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/bin/Debug/net6.0/Newtonsoft.Json.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/bin/Debug/net6.0/Suave.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/bin/Debug/net6.0/cs/FSharp.Core.resources.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/bin/Debug/net6.0/de/FSharp.Core.resources.dll
@@ -31,4 +32,3 @@
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/obj/Debug/net6.0/FilesExchanger.ConsoleTestApp.dll
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/obj/Debug/net6.0/FilesExchanger.ConsoleTestApp.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/obj/Debug/net6.0/FilesExchanger.ConsoleTestApp.genruntimeconfig.cache
-/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.ConsoleTestApp/bin/Debug/net6.0/Newtonsoft.Json.dll

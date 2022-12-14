@@ -7,7 +7,6 @@ open WebSharper
 open WebSharper.UI
 open WebSharper.UI.Notation
 
-
 [<JavaScript>]
 module FirstConnectionForReceiveJsModule =
     let Run() =

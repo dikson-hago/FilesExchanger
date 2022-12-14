@@ -1644,25 +1644,11 @@
           }
         }
       },
-      "FilesExchanger.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "FSharp.Core": "6.0.1"
-        },
-        "compile": {
-          "bin/placeholder/FilesExchanger.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FilesExchanger.Domain.dll": {}
-        }
-      },
       "FilesExchanger.Host/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "FSharp.Core": "6.0.6",
-          "FilesExchanger.Domain": "1.0.0",
           "FilesExchanger.NetworkTools": "1.0.0",
           "FilesExchanger.Tools": "1.0.0",
           "WebSharper": "6.0.4.240",
@@ -5387,11 +5373,6 @@
         "websharper.ui.6.0.5.240.nupkg.sha512",
         "websharper.ui.nuspec"
       ]
-    },
-    "FilesExchanger.Domain/1.0.0": {
-      "type": "project",
-      "path": "../../src/FilesExchanger.Domain/FilesExchanger.Domain.fsproj",
-      "msbuildProject": "../../src/FilesExchanger.Domain/FilesExchanger.Domain.fsproj"
     },
     "FilesExchanger.Host/1.0.0": {
       "type": "project",

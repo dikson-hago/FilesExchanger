@@ -1,5 +1,7 @@
 namespace FilesExchanger.Host.Handlers
 
+open System.Collections.Generic
+open FilesExchanger.Application.CompressionTools
 open FilesExchanger.NetworkTools.Models
 open FilesExchanger.Host.Handlers.Models
 open FilesExchanger.NetworkTools
@@ -11,10 +13,10 @@ module FirstConnectionForSendHandler =
     
     let ConvertToFirstConnectionMessage (message : string) =
         let model = {
+            ByteMessage = Array.empty
+            CompressionInfo = {CodesInfoJson = Dictionary<byte, BitsListInfo>(); BitsAmount = 0}
+            EncryptionInfo = {E = 0; N = 0};
             StringMessage = message;
-            ByteMessage = Array.empty;
-            ByteEncryptMessage = Array.empty;
-            BigIntArrMessage = Array.empty;
             MessageType = WsMessageType.FirstConnection
         }
         model
@@ -39,7 +41,7 @@ module FirstConnectionForSendHandler =
             
             // set external keys
             RsaKeysInfo.setExternalKeys
-                res.BigIntArrMessage.[0] res.BigIntArrMessage.[1]
-             
-            return res
+                res.EncryptionInfo.E res.EncryptionInfo.N
+                
+            return res.StringMessage
         }

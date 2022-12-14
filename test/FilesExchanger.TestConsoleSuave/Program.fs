@@ -1,8 +1,11 @@
-﻿open FilesExchanger.Application.FilesConvertor
+﻿open System.Collections.Generic
+open FilesExchanger.Application.CompressionTools
+open FilesExchanger.Application.FilesConvertor
 open FilesExchanger.Application.IpConvertor
 open FilesExchanger.Host.Handlers.Models
 open FilesExchanger.NetworkTools.Models
 open FilesExchanger.NetworkTools
+open FilesExchanger.Tools.CompressionTools.Haffman
 open FilesExchanger.Tools.CryptographyTools.Rsa
 
 let targetFolder = "/home/user12/Documents/Projects/git/TestFolder/ToFolder"
@@ -17,10 +20,10 @@ let initRsa() =
 let InitConnectionResponseForKeys() =
         let (e, n) = RsaKeysInfo.getOwnKeysForEncrypt()
         let model = {
-            StringMessage = "";
             ByteMessage = Array.empty
-            ByteEncryptMessage = Array.empty
-            BigIntArrMessage = [|e; n|]
+            CompressionInfo = {CodesInfoJson = Dictionary<byte, BitsListInfo>(); BitsAmount = 0}
+            EncryptionInfo = {E = e; N = n}
+            StringMessage = "";
             MessageType = WsMessageType.Key
         }
         model
@@ -31,16 +34,31 @@ let InitConnectionResponseForFile bytes =
         let encryptMessage = EncryptorContext.RsaContext.Encrypt e n bytes
         
         let model = {
-            StringMessage = "";
             ByteMessage = Array.empty
-            ByteEncryptMessage = encryptMessage
-            BigIntArrMessage = Array.empty
-            MessageType = WsMessageType.File
+            CompressionInfo = {CodesInfoJson = Dictionary<byte, BitsListInfo>(); BitsAmount = 0};
+            EncryptionInfo = {E = 0; N = 0}
+            StringMessage = ""
+            MessageType = WsMessageType.StatusOK
         }
         model
+    
+let DecompressBytes (bytes : byte[]) (compressionInfo : CompressionInfoType) =
+        let bitsList = BitsList()
+        bitsList.setCompressionInfo (bytes |> Array.toList) compressionInfo.BitsAmount
         
+        let codesInfoBitsList = BitListConverter.ToBitList compressionInfo.CodesInfoJson
         
-let TestSimpleConnection _=
+        let res = CompresstionContext.HaffmanContext.decompress bitsList codesInfoBitsList
+        res
+        
+let DecryptBytes (bytes : byte[]) =
+        let (d, n) = RsaKeysInfo.getOwnKeysForDecrypt()
+        
+        let decryptBytes = EncryptorContext.RsaContext.Decrypt2 d n bytes
+        
+        decryptBytes
+        
+let TestSimpleConnection _ =
     let res = IpAddressConvertor.encrypt localIp localPort
     printfn $"address: {res}"
     initRsa() |> ignore
@@ -57,11 +75,11 @@ let TestSimpleConnection _=
             // get file name
             let fileName = res.StringMessage
             
-            // encrypt bytes
-            let encryptBytes = res.ByteEncryptMessage
-            let (d, n) = RsaKeysInfo.getOwnKeysForDecrypt()
+            // decompress bytes
+            let decompressedBytes = DecompressBytes res.ByteMessage res.CompressionInfo
             
-            let bytes = EncryptorContext.RsaContext.Decrypt d n encryptBytes
+            // encrypt bytes
+            let bytes = DecryptBytes (decompressedBytes |> List.toArray)
             
             let filePath = FilesConvertorContext.ConcatFolderAndFile targetFolder fileName
             FilesConvertorContext.BytesToFile filePath bytes

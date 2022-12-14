@@ -857,18 +857,9 @@
           }
         }
       },
-      "FilesExchanger.Domain/1.0.0": {
-        "dependencies": {
-          "FSharp.Core": "6.0.1"
-        },
-        "runtime": {
-          "FilesExchanger.Domain.dll": {}
-        }
-      },
       "FilesExchanger.Host/1.0.0": {
         "dependencies": {
           "FSharp.Core": "6.0.1",
-          "FilesExchanger.Domain": "1.0.0",
           "FilesExchanger.NetworkTools": "1.0.0",
           "FilesExchanger.Tools": "1.0.0",
           "WebSharper": "6.0.4.240",
@@ -1543,11 +1534,6 @@
       "sha512": "sha512-+aDs+no6E2O8YOfbKUGPmR3+Nt0vJmfsXSnKVLtLjUE/4lsb+v5Kehm2lonzsilGQQvebTrM3CgxQdI3KsfJ2g==",
       "path": "websharper.ui/6.0.5.240",
       "hashPath": "websharper.ui.6.0.5.240.nupkg.sha512"
-    },
-    "FilesExchanger.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "FilesExchanger.Host/1.0.0": {
       "type": "project",

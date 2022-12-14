@@ -67,11 +67,6 @@
 /home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Application.dll
 /home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Application.pdb
 /home/user12/Documents/Projects/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Application.xml
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.fsproj.AssemblyReference.cache
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.AssemblyInfoInputs.cache
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.AssemblyInfo.fs
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.MvcApplicationPartsAssemblyInfo.fs
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.MvcApplicationPartsAssemblyInfo.cache
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/appsettings.Development.json
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/appsettings.json
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/wsconfig.json
@@ -84,6 +79,7 @@
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FSharp.Core.dll
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/HtmlAgilityPack.dll
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/Newtonsoft.Json.dll
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/Suave.dll
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/System.Drawing.Common.dll
@@ -129,6 +125,11 @@
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Tools.xml
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.NetworkTools.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.NetworkTools.xml
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.fsproj.AssemblyReference.cache
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.AssemblyInfoInputs.cache
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.AssemblyInfo.fs
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.MvcApplicationPartsAssemblyInfo.fs
+/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.MvcApplicationPartsAssemblyInfo.cache
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/staticwebassets.build.json
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/staticwebassets.development.json
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/scopedcss/bundle/FilesExchanger.Host.styles.css
@@ -136,7 +137,3 @@
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.dll
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.pdb
 /home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/obj/Debug/net6.0/FilesExchanger.Host.genruntimeconfig.cache
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/Newtonsoft.Json.dll
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Domain.dll
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Domain.pdb
-/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/bin/Debug/net6.0/FilesExchanger.Domain.xml

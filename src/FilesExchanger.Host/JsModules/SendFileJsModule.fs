@@ -17,9 +17,9 @@ module SendFileJsModule =
                     let filePath = e.Vars.FileLocation.Value
                     try
                         let! res = SendFilesHandler.Send filePath
-                        sendFileResponse := "ok"
+                        sendFileResponse := "Status of send: ok"
                     with 
-                       | :? System.Exception as ex -> sendFileResponse := "error"
+                       | :? System.Exception as ex -> sendFileResponse := "Status of send: error"
                 }
                 |> Async.StartImmediate
             )
