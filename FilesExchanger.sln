@@ -17,8 +17,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.TestConsoleS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{5012DEA1-DDAE-4257-9514-69503CEE6AB8}"
 	ProjectSection(SolutionItems) = preProject
-		common\Plan.md = common\Plan.md
-		common\.gitignore = common\.gitignore
+		.gitignore = .gitignore
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.TestWebSockets", "test\FilesExchanger.TestWebSockets\FilesExchanger.TestWebSockets.fsproj", "{6B73537D-939D-4D35-BCA5-6D65BF090497}"
