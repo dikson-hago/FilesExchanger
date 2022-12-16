@@ -1,4 +1,8 @@
+# build
 [Dd]ebug/
 [Rr]elase/
 [Bb]in/
 [Oo]bj/
+
+# Jetbrains Rider
+.idea/
