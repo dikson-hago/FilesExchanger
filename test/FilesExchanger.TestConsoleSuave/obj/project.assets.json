@@ -5405,11 +5405,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/FilesExchanger.TestConsoleSuave.fsproj",
+      "projectUniqueName": "/home/user12/Documents/Projects/git/Main/FilesExchanger/test/FilesExchanger.TestConsoleSuave/FilesExchanger.TestConsoleSuave.fsproj",
       "projectName": "FilesExchanger.TestConsoleSuave",
-      "projectPath": "/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/FilesExchanger.TestConsoleSuave.fsproj",
+      "projectPath": "/home/user12/Documents/Projects/git/Main/FilesExchanger/test/FilesExchanger.TestConsoleSuave/FilesExchanger.TestConsoleSuave.fsproj",
       "packagesPath": "/home/user12/.nuget/packages/",
-      "outputPath": "/home/user12/Documents/Projects/git/FilesExchanger/test/FilesExchanger.TestConsoleSuave/obj/",
+      "outputPath": "/home/user12/Documents/Projects/git/Main/FilesExchanger/test/FilesExchanger.TestConsoleSuave/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/user12/.nuget/NuGet/NuGet.Config"
@@ -5424,14 +5424,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/FilesExchanger.Host.fsproj": {
-              "projectPath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Host/FilesExchanger.Host.fsproj"
+            "/home/user12/Documents/Projects/git/Main/FilesExchanger/src/FilesExchanger.Host/FilesExchanger.Host.fsproj": {
+              "projectPath": "/home/user12/Documents/Projects/git/Main/FilesExchanger/src/FilesExchanger.Host/FilesExchanger.Host.fsproj"
             },
-            "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.NetworkTools/FilesExchanger.NetworkTools.fsproj": {
-              "projectPath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.NetworkTools/FilesExchanger.NetworkTools.fsproj"
+            "/home/user12/Documents/Projects/git/Main/FilesExchanger/src/FilesExchanger.NetworkTools/FilesExchanger.NetworkTools.fsproj": {
+              "projectPath": "/home/user12/Documents/Projects/git/Main/FilesExchanger/src/FilesExchanger.NetworkTools/FilesExchanger.NetworkTools.fsproj"
             },
-            "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/FilesExchanger.Tools.fsproj": {
-              "projectPath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/FilesExchanger.Tools.fsproj"
+            "/home/user12/Documents/Projects/git/Main/FilesExchanger/src/FilesExchanger.Tools/FilesExchanger.Tools.fsproj": {
+              "projectPath": "/home/user12/Documents/Projects/git/Main/FilesExchanger/src/FilesExchanger.Tools/FilesExchanger.Tools.fsproj"
             }
           }
         }

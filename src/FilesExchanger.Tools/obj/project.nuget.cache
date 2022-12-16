@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqyyTYAd1mxPkdwygxHnaz6AExj2WuSQRRdSHLWLY5g6PvgB5to+Yhawd0GHT7aNm/pZRruHfVyYmsGwm1Mu3g==",
+  "dgSpecHash": "T3hLZxcbFTYPajEwqG1fGyYTv3PjydCIrpegWJ7NATxFab7wU/lf8NB2FcZZAisVy+BqYuHxt7DUizBookpX/g==",
   "success": true,
-  "projectFilePath": "/home/user12/Documents/Projects/git/FilesExchanger/src/FilesExchanger.Tools/FilesExchanger.Tools.fsproj",
+  "projectFilePath": "/home/user12/Documents/Projects/git/Main/FilesExchanger/src/FilesExchanger.Tools/FilesExchanger.Tools.fsproj",
   "expectedPackageFiles": [
     "/home/user12/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512"
   ],
