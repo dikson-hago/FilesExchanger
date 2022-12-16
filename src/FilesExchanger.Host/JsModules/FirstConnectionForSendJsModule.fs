@@ -17,9 +17,9 @@ module FirstConnectionForSendJsModule =
                     let externalDeviceName = e.Vars.Address.Value
                     try
                         let! res = FirstConnectionForSendHandler.Connect externalDeviceName
-                        testConnectionResponse := $"Connected to device: {externalDeviceName}"
+                        testConnectionResponse := $"Status: {res}"
                     with
-                        | :? System.Exception as ex -> testConnectionResponse := "disconnected"
+                        | :? System.Exception as ex -> testConnectionResponse := "Status: disconnected"
                 }
                 |> Async.StartImmediate
             )

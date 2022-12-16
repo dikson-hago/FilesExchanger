@@ -3,13 +3,13 @@ namespace FilesExchanger.Host.Handlers
 open System.Collections.Generic
 open FilesExchanger.Application.CompressionTools
 open FilesExchanger.Application.FilesConvertor
+open FilesExchanger.Host.Handlers.Errors
 open FilesExchanger.Host.Handlers.Models
 open FilesExchanger.NetworkTools
 open FilesExchanger.NetworkTools.Models
 open FilesExchanger.Tools.CompressionTools.Haffman
 open FilesExchanger.Tools.CryptographyTools.Rsa
 
-open Newtonsoft.Json
 open WebSharper
 open WebSharper.UI
 
@@ -44,34 +44,41 @@ module DownloadFilesHandler =
     [<Rpc>]
     let DownloadFile targetFolderUrl =
         async {
-            // get local ip and port
-            let (localIp, port) = IpAddressContext.GetLocalIpAndPortForSuave()
+            let iterationInfo = ReceiveFileIterationType.ReceiveFileInit
+            if IterationInfo.receiveFileIterationValue < iterationInfo then
+                return ErrorTexts.IncorrectIteration
+            else
+                try
+                    // get local ip and port
+                    let (localIp, port) = IpAddressContext.GetLocalIpAndPortForSuave()
 
-            // build response model
-            let responseModel = InitConnectionResponse()
-            
-            // build webSocket context
-            let wsContext = WebSocketNetworkContext()
-            
-            // get model
-            let wsModel = wsContext.GetModel localIp port responseModel
-            
-            // decompress bytes
-            let decompressedBytes =
-                    DecompressBytes wsModel.ByteMessage wsModel.CompressionInfo
-            
-            // encrypt bytes
-            let bytes = DecryptBytes (decompressedBytes |> List.toArray)
-            
-            // get file fileName
-            let fileName = wsModel.StringMessage
-            
-            // get file path
-            let filePath = FilesConvertorContext.ConcatFolderAndFile targetFolderUrl fileName
-            
-            // save file
-            FilesConvertorContext.BytesToFile filePath bytes
-            
-            return 1
+                    // build response model
+                    let responseModel = InitConnectionResponse()
+                    
+                    // build webSocket context
+                    let wsContext = WebSocketNetworkContext()
+                    
+                    // get model
+                    let wsModel = wsContext.GetModel localIp port responseModel
+                    
+                    // decompress bytes
+                    let decompressedBytes =
+                            DecompressBytes wsModel.ByteMessage wsModel.CompressionInfo
+                    
+                    // encrypt bytes
+                    let bytes = DecryptBytes (decompressedBytes |> List.toArray)
+                    
+                    // get file fileName
+                    let fileName = wsModel.StringMessage
+                    
+                    // get file path
+                    let filePath = FilesConvertorContext.ConcatFolderAndFile targetFolderUrl fileName
+                    
+                    // save file
+                    FilesConvertorContext.BytesToFile filePath bytes
+                    
+                    return ErrorTexts.StatusOk
+                with
+                    | :? System.Exception as ex -> return ErrorTexts.ConnectionError
         }
 

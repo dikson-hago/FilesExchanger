@@ -1,4 +1,4 @@
-**/bin/*
-**/obj/*
-bin/*
-obj/*
+[Dd]ebug/
+[Rr]elase/
+[Bb]in/
+[Oo]bj/

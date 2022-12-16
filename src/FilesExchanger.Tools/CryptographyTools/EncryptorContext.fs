@@ -1,12 +1,29 @@
 namespace FilesExchanger.Host.Handlers.Models
 
+open FilesExchanger.Application.CryptographyTools.Rsa
 open FilesExchanger.Tools.CryptographyTools.Rsa
 
 open System
 open Microsoft.FSharp.Collections
 
 module EncryptorContext =
-    module RsaContext = 
+    module RsaContext =
+        let InitRsa() =
+            let mutable rsaTestResult = RsaTestResult.Failed
+            
+            let mutable e = 0L
+            let mutable d = 0L
+            let mutable n = 0L
+            
+            while (rsaTestResult <> RsaTestResult.Passed) do
+                let (e1, d1, n1) = Rsa.init()
+                e <- e1
+                d <- d1
+                n <- n1
+                let res = (RsaTest.run e d n)
+                rsaTestResult <- res
+            (e, d, n)
+        
         let Encrypt e n (bytes : byte[]) =
             let intArr = bytes |> Array.map(fun x -> x |> int64)
             

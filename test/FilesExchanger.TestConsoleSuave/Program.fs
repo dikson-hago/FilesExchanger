@@ -3,6 +3,7 @@ open FilesExchanger.Application.CompressionTools
 open FilesExchanger.Application.FilesConvertor
 open FilesExchanger.Application.IpConvertor
 open FilesExchanger.Host.Handlers.Models
+open FilesExchanger.Host.Handlers.Models.EncryptorContext
 open FilesExchanger.NetworkTools.Models
 open FilesExchanger.NetworkTools
 open FilesExchanger.Tools.CompressionTools.Haffman
@@ -13,7 +14,7 @@ let localIp = "127.0.0.1"
 let localPort = 8082
 
 let initRsa() =
-    let (e, d, n) = Rsa.init()
+    let (e, d, n) = RsaContext.InitRsa()
     RsaKeysInfo.setOwnKeys e d n
     0
         

@@ -1,5 +1,6 @@
 ﻿open System
 open System.Collections.Generic
+open FilesExchanger.Host.Handlers.Models.EncryptorContext
 open FilesExchanger.NetworkTools.Models
 open FilesExchanger.Tools.CryptographyTools.Rsa
 open Newtonsoft.Json
@@ -26,7 +27,7 @@ let WsMessageModelTest (dict : Dictionary<byte, BitsListInfo>) =
     0
     
 let TestRsa() =
-    let (e, d, n) = Rsa.init()
+    let (e, d, n) = RsaContext.InitRsa()
     
     let bytes = [|22uy; 1uy; 2uy;123uy;112uy;33uy;12uy;44uy;92uy|]
     
@@ -76,12 +77,17 @@ let TestInt64() =
     
     0
     
+let TestRsaTest() =
+    let x = RsaContext.InitRsa()
+    x
+    
 [<EntryPoint>]
 let main _ =
-    let dict = new Dictionary<byte, BitsListInfo>()
+    TestRsaTest() |> ignore
+    (*let dict = new Dictionary<byte, BitsListInfo>()
     dict[1uy] <- {BitsListSize = 0; BytesArr = [|1uy;2uy|]}
     
-    WsMessageModelTest(dict) |> ignore
+    WsMessageModelTest(dict) |> ignore*)
     //TestCompression() |> ignore
     //TestInt64() |> ignore
    // TestCompression() |> ignore

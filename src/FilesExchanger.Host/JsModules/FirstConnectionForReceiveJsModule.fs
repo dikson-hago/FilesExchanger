@@ -16,9 +16,9 @@ module FirstConnectionForReceiveJsModule =
                 async {
                     try
                         let! connectedDeviceName = FirstConnectionForReceiveHandler.Connect()
-                        connectionStatus := $"Connected device: {connectedDeviceName}"
+                        connectionStatus := $"Status: {connectedDeviceName}"
                     with
-                        | :? System.Exception as ex -> connectionStatus := "disconnected"
+                        | :? System.Exception as ex -> connectionStatus := "Status: disconnected"
                 }
                 |> Async.StartImmediate
             )

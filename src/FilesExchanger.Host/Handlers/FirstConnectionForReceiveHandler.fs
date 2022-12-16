@@ -2,6 +2,9 @@ namespace FilesExchanger.Host.Handlers
 
 open System.Collections.Generic
 open FilesExchanger.Application.CompressionTools
+open FilesExchanger.Host.Handlers.Errors
+open FilesExchanger.Host.Handlers.Models
+open FilesExchanger.Host.Handlers.Models.EncryptorContext
 open FilesExchanger.NetworkTools
 open FilesExchanger.NetworkTools.Models
 open FilesExchanger.Tools.CryptographyTools.Rsa
@@ -10,7 +13,7 @@ open WebSharper
 
 module FirstConnectionForReceiveHandler =
     let initRsa() =
-        let (e, d, n) = Rsa.init()
+        let (e, d, n) = RsaContext.InitRsa()
         RsaKeysInfo.setOwnKeys e d n
         ()
     
@@ -28,24 +31,30 @@ module FirstConnectionForReceiveHandler =
     [<Rpc>]
     let Connect() =
         async {
-            // get ip and port
-            let (ip, port) = IpAddressContext.GetLocalIpAndPortForSuave()
-            
-            // init Rsa
-            initRsa()
-            
-            // init connection response
-            let connectionResponse = InitConnectionResponse()
-            
-            // create websocket context
-            let wsContext = WebSocketNetworkContext()
-            
-            // get model of first connection
-            let model = wsContext.GetModel ip port connectionResponse
-            
-            // get connection device name            
-            let connectedDeviceName = model.StringMessage
-            
-            return connectedDeviceName
+            let iterationInfo = ReceiveFileIterationType.FirstConnectionInit
+            if IterationInfo.receiveFileIterationValue < iterationInfo then
+                return ErrorTexts.IncorrectIteration
+            else 
+                // get ip and port
+                let (ip, port) = IpAddressContext.GetLocalIpAndPortForSuave()
+                
+                // init Rsa
+                initRsa()
+                
+                // init connection response
+                let connectionResponse = InitConnectionResponse()
+                
+                // create websocket context
+                let wsContext = WebSocketNetworkContext()
+                
+                // get model of first connection
+                let model = wsContext.GetModel ip port connectionResponse
+                
+                // get connection device name            
+                let connectedDeviceName = model.StringMessage
+                
+                IterationInfo.receiveFileIterationValue <- ReceiveFileIterationType.ReceiveFileInit
+                
+                return connectedDeviceName
         }
 

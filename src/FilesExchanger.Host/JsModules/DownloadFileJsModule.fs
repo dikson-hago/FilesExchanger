@@ -18,7 +18,7 @@ module DownloadFileJsModule =
                     
                     let! res = DownloadFilesHandler.DownloadFile filePath
                     
-                    downloadResult := "Status of getting file: ok"
+                    downloadResult := $"Status: {res}"
                 }
                 |> Async.StartImmediate
             )

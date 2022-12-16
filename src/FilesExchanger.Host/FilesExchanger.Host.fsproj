@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Handlers\Errors\ErrorTexts.fs" />
     <Compile Include="Handlers\Models\ExternalIpInfo.fs" />
+    <Compile Include="Handlers\Models\IterationInfo.fs" />
     <Compile Include="Handlers\SendFilesHandler.fs" />
     <Compile Include="Handlers\DownloadFilesHandler.fs" />
     <Compile Include="Handlers\GenerateDeviceNameHandler.fs" />

@@ -11,6 +11,7 @@
     <Compile Include="CryptographyTools\Rsa\Rsa.fs" />
     <Compile Include="CryptographyTools\Rsa\RsaKeysModel.fs" />
     <Compile Include="CryptographyTools\Rsa\RsaKeysInfo.fs" />
+    <Compile Include="CryptographyTools\Rsa\RsaTest.fs" />
     <Compile Include="CryptographyTools\EncryptorContext.fs" />
     <Compile Include="CompressionTools\Haffman\BitList.fs" />
     <Compile Include="CompressionTools\Haffman\HaffmanTree.fs" />
