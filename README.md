@@ -69,8 +69,6 @@ User2 have to wait a log in console as in picture:
 ![plot](common/img/send3.png)
 ![plot](common/img/get3.png)
 
-# Profit!
-
 ## V. Plans for future
 ```
 - improve compression algorythm (make it faster)
