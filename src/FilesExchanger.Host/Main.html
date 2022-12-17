@@ -50,7 +50,7 @@
     <div class="container" style="width:800px; margin:0 auto;">
         <div ws-replace="Body">
             <div ws-template="GenerateDeviceNameForm">
-                <button ws-onclick="GenerateDeviceName">GenerateDeviceName</button>
+                <button ws-onclick="GenerateDeviceName">Generate device name</button>
                 <p><div class="jumbotron"><h3>${DeviceNameResponse}</h3></div></p>
             </div>
             <div ws-template="TryConnectForSendForm">
@@ -59,12 +59,12 @@
                 <p><div class="jumbotron"><h3>${TestConnectionResponse}</h3></div></p>
             </div>
             <div ws-template="TryConnectForReceiveForm">
-                <button ws-onclick="WaitConnection">WaitConnection</button>
+                <button ws-onclick="WaitConnection">Wait connection</button>
                 <p><div class="jumbotron"><h3>${TestConnectionResponse}</h3></div></p>
             </div>
             <div ws-template="DownloadFileForm">
                 <input ws-var="TargetFolderLocation" placeholder="Target folder location"/>
-                <button ws-onclick="Download">Download</button>
+                <button ws-onclick="Download">Get File</button>
                 <p><div class="jumbotron"><h3>${DownloadFileResponse}</h3></div></p>
             </div>
             <div ws-template="SendFileForm">

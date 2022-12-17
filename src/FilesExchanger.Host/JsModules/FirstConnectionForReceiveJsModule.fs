@@ -15,8 +15,8 @@ module FirstConnectionForReceiveJsModule =
             .WaitConnection(fun e ->
                 async {
                     try
-                        let! connectedDeviceName = FirstConnectionForReceiveHandler.Connect()
-                        connectionStatus := $"Status: {connectedDeviceName}"
+                        let! status = FirstConnectionForReceiveHandler.Connect()
+                        connectionStatus := $"Status: {status}"
                     with
                         | :? System.Exception as ex -> connectionStatus := "Status: disconnected"
                 }

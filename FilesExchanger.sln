@@ -25,6 +25,13 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.TestWebSocke
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FilesExchanger.ConsoleTestApp", "test\FilesExchanger.ConsoleTestApp\FilesExchanger.ConsoleTestApp.fsproj", "{8C4D5A11-11FA-4549-86DC-8CAF667D9FC6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{94F60306-882D-4155-9F58-BD65D036BD6B}"
+	ProjectSection(SolutionItems) = preProject
+		common\img\post1.png = common\img\post1.png
+		common\img\post2.png = common\img\post2.png
+		common\img\post3.png = common\img\post3.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +47,7 @@ Global
 		{C80AF89D-B046-4DE6-BDD0-B5B552ADF144} = {F9DD1E6B-912B-4B6D-850C-0F5850B2990A}
 		{6B73537D-939D-4D35-BCA5-6D65BF090497} = {F9DD1E6B-912B-4B6D-850C-0F5850B2990A}
 		{8C4D5A11-11FA-4549-86DC-8CAF667D9FC6} = {F9DD1E6B-912B-4B6D-850C-0F5850B2990A}
+		{94F60306-882D-4155-9F58-BD65D036BD6B} = {5012DEA1-DDAE-4257-9514-69503CEE6AB8}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{615424EF-F773-4FDA-AC43-14BF98E73C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

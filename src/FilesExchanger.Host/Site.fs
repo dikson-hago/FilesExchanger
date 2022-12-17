@@ -6,7 +6,7 @@ open WebSharper.UI
 open WebSharper.UI.Server
 
 type EndPoint =
-    | [<EndPoint "/post">] Post
+    | [<EndPoint "/send">] Send
     | [<EndPoint "/get">] Get
 
 module Templating =
@@ -19,7 +19,7 @@ module Templating =
                 a [attr.href (ctx.Link act)] [text txt]
              ]
         [
-            "Post" => EndPoint.Post
+            "Send" => EndPoint.Send
             "Get" => EndPoint.Get
         ]
 
@@ -38,7 +38,7 @@ module Site =
     open type WebSharper.UI.ClientServer
 
     let HomePage ctx =
-        Templating.Main ctx EndPoint.Post "Post" [
+        Templating.Main ctx EndPoint.Send "Send" [
             h1 [] [text "Page for send files"]
             div [] [client (Client.DeviceNameModule())]
             div [] [client (Client.TestConnectionForSendModule())]
@@ -57,6 +57,6 @@ module Site =
     let Main =
         Application.MultiPage (fun ctx endpoint ->
             match endpoint with
-            | EndPoint.Post -> HomePage ctx
+            | EndPoint.Send -> HomePage ctx
             | EndPoint.Get -> AboutPage ctx
         )

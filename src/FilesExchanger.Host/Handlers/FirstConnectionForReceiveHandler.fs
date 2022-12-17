@@ -34,27 +34,30 @@ module FirstConnectionForReceiveHandler =
             let iterationInfo = ReceiveFileIterationType.FirstConnectionInit
             if IterationInfo.receiveFileIterationValue < iterationInfo then
                 return ErrorTexts.IncorrectIteration
-            else 
-                // get ip and port
-                let (ip, port) = IpAddressContext.GetLocalIpAndPortForSuave()
-                
-                // init Rsa
-                initRsa()
-                
-                // init connection response
-                let connectionResponse = InitConnectionResponse()
-                
-                // create websocket context
-                let wsContext = WebSocketNetworkContext()
-                
-                // get model of first connection
-                let model = wsContext.GetModel ip port connectionResponse
-                
-                // get connection device name            
-                let connectedDeviceName = model.StringMessage
-                
-                IterationInfo.receiveFileIterationValue <- ReceiveFileIterationType.ReceiveFileInit
-                
-                return connectedDeviceName
+            else
+                try
+                    // get ip and port
+                    let (ip, port) = IpAddressContext.GetLocalIpAndPortForSuave()
+                    
+                    // init Rsa
+                    initRsa()
+                    
+                    // init connection response
+                    let connectionResponse = InitConnectionResponse()
+                    
+                    // create websocket context
+                    let wsContext = WebSocketNetworkContext()
+                    
+                    // get model of first connection
+                    let model = wsContext.GetModel ip port connectionResponse
+                    
+                    // get connection device name            
+                    let connectedDeviceName = model.StringMessage
+                    
+                    IterationInfo.receiveFileIterationValue <- ReceiveFileIterationType.ReceiveFileInit
+                    
+                    return $"Connected to {connectedDeviceName}"
+                with
+                    | :? System.Exception as ex -> return ErrorTexts.ConnectionError 
         }
 

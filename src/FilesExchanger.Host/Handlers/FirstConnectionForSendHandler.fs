@@ -51,7 +51,7 @@ module FirstConnectionForSendHandler =
         
                     IterationInfo.sendFileIterationValue <- SendFileIterationType.SendFileInit
                     
-                    return $"Device name: {res.StringMessage}"
+                    return ErrorTexts.ConnectionOk
                 with
                     | :? System.Exception as ex -> return ErrorTexts.ConnectionError
         }

@@ -6,3 +6,5 @@ module ErrorTexts =
     let StatusOk = "OK"
     
     let ConnectionError = "Connection error"
+    
+    let ConnectionOk = "Connected"
