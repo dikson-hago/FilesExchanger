@@ -1,19 +1,25 @@
 # Files Exchanger
 
-## Desclaimer
+## I. Disclaimer
+```
+The author is not responsible for the use of this project and code. It is just
+an educational/experimental project for my F# course.
+```
+
+## II. Description
 ```
     Current project was and experimental project with F# language. It helps 
 people to exchange files in local network, without using popular messangers.
 ```
 
-## How to run
+## III. How to run
 ```
     You can find executable .zip files in folder "common" (for windows-x64, linux-x64), and run them in console as in example
 (But you have to run it in current folder, which you extract from .zip files, otherwise you will get an error)
 ```
 ![plot](common/img/runExample.png)
 
-## Example of exchanging files
+## IV. Example of exchanging files
 User1 - have to send file<br/>
 User2 - have to receive file
 ### Step 1 (open the page and generate device name)
@@ -60,16 +66,17 @@ User2 have to wait a log in console as in picture:
 ![plot](common/img/send3.png)
 ![plot](common/img/get3.png)
 
+# Profit!
 
-## Plans for future
+## V. Plans for future
 ```
 - improve compression algorythm (make it faster)
 - improve crypto algorythm (add new)
 - add button "Choose file"
 ```
-# Profit!
 
-## Short description, how it works inside
+
+## VI. Short description, how it works inside
 
 ### Used tools
 ```

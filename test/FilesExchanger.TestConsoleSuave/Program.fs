@@ -9,7 +9,7 @@ open FilesExchanger.NetworkTools
 open FilesExchanger.Tools.CompressionTools.Haffman
 open FilesExchanger.Tools.CryptographyTools.Rsa
 
-let targetFolder = "/home/user12/Documents/Projects/git/TestFolder/ToFolder"
+let targetFolder = ""
 let localIp = "127.0.0.1"
 let localPort = 8082
 
