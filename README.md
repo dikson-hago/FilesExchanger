@@ -10,6 +10,8 @@ an educational/experimental project for my F# course.
 ```
     Current project was and experimental project with F# language. It helps 
 people to exchange files in local network, without using popular messangers.
+    Sometimes, program can work too long with big files. So, it is recommenteds
+to use current program, only with really small .txt files.
 ```
 
 ## III. How to run
@@ -21,10 +23,11 @@ people to exchange files in local network, without using popular messangers.
 
 ## IV. Example of exchanging files
 User1 - have to send file<br/>
-User2 - have to receive file
+User2 - have to get file
+
 ### Step 1 (open the page and generate device name)
 ```
-    User1 should open the page http://localhost:5010/post and press 
+    User1 should open the page http://localhost:5010/send and press 
 button "GenerateDeviceName", for generation personal "UserDeviceName_1" in local network.
 ```
 ![plot](common/img/send1.png)
@@ -38,10 +41,10 @@ button "GenerateDeviceName", for generation personal "UserDeviceName_2" in local
 
 ### Step 3 (first connection)
 ```
-1. User2 have to tell to the User1 of his "UserDeviceName2". 
-2. User2 press button "Wait connection"
+1. User2 have to give to the User1 of his "UserDeviceName2". 
+2. User2 press button: "Wait connection"
 ```
-User2 have to wait a log in console as in picture:
+User2 have to wait a log in console, as on the picture:
 ![plot](common/img/server.jpg)
 ```
 3. User1 put UserDeviceName2 into label and press button "Connect"
@@ -86,16 +89,21 @@ User2 have to wait a log in console as in picture:
 - Suave server for receiving of client messages
 ```
 
-### Sending of data process inside
+### Sending process
 ```
 1. Data encrypted by RSA algorythm
 2. Data compressed by Haffman algorythm
 3. Program opens websocket on special port for send file
 ```
 
-### Receive of data process inside
+### Getting process
 ```
 1. Program run Suave server for get new data
 2. When program get new data, current data decompressed by Haffman tree
 3. Then current data decrypted by RSA algorythm
+```
+
+## VII. Unexpected troubles/errors
+```
+    If you get some unexpected error: try to restart program.
 ```
