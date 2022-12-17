@@ -48,7 +48,11 @@ module SendFilesHandler =
         model
         
     let GetFileNameByFilePath (filePath : string) =
-        let id = filePath.LastIndexOf("/")
+        let mutable id = filePath.LastIndexOf("/")
+        
+        if id = -1 then
+            id <- filePath.LastIndexOf('\\')
+        
         let fileName = filePath.[(id + 1)..]
         
         fileName

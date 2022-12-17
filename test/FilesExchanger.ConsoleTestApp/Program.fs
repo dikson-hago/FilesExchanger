@@ -83,7 +83,9 @@ let TestRsaTest() =
     
 [<EntryPoint>]
 let main _ =
-    TestRsaTest() |> ignore
+    let s = "C:\sd\d"
+    printfn $"%d{s.LastIndexOf('\\')}"
+    // TestRsaTest() |> ignore
     (*let dict = new Dictionary<byte, BitsListInfo>()
     dict[1uy] <- {BitsListSize = 0; BytesArr = [|1uy;2uy|]}
     

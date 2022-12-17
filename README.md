@@ -6,6 +6,13 @@
 people to exchange files in local network, without using popular messangers.
 ```
 
+## How to run
+```
+    You can find executable .zip files in folder "common" (for windows-x64, linux-x64), and run them in console as in example
+(But you have to run it in current folder, which you extract from .zip files, otherwise you will get an error)
+```
+![plot](common/img/runExample.png)
+
 ## Example of exchanging files
 User1 - have to send file<br/>
 User2 - have to receive file
@@ -27,6 +34,10 @@ button "GenerateDeviceName", for generation personal "UserDeviceName_2" in local
 ```
 1. User2 have to tell to the User1 of his "UserDeviceName2". 
 2. User2 press button "Wait connection"
+```
+User2 have to wait a log in console as in picture:
+![plot](common/img/server.jpg)
+```
 3. User1 put UserDeviceName2 into label and press button "Connect"
 4. 
     4.1. User1 get the message: "Status: Connected"
@@ -38,6 +49,10 @@ button "GenerateDeviceName", for generation personal "UserDeviceName_2" in local
 ### Step 4
 ```
 1. User2 print the target folder for file from User1,  and press button "Get file"
+```
+User2 have to wait a log in console as in picture:
+![plot](common/img/server.jpg)
+```
 2. User1 print the location of file, which he want to send and then press button "Send"
 3. User1 get message: "Status: OK"
 4. User2 get message "Status: OK"
