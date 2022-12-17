@@ -33,7 +33,7 @@ button "GenerateDeviceName", for generation personal "UserDeviceName_2" in local
     4.2. User2 get the meccage: "Status: Connected"
 ```
 ![plot](common/img/get2.png)
-![plot](common/img/send3.1.png)
+![plot](common/img/send2.png)
 
 ### Step 4
 ```
@@ -42,8 +42,8 @@ button "GenerateDeviceName", for generation personal "UserDeviceName_2" in local
 3. User1 get message: "Status: OK"
 4. User2 get message "Status: OK"
 ```
-![plot](common/img/send4.1.png)
-![plot](common/img/get4.png)
+![plot](common/img/send3.png)
+![plot](common/img/get3.png)
 
 
 ## Plans for future
@@ -53,7 +53,6 @@ button "GenerateDeviceName", for generation personal "UserDeviceName_2" in local
 - add button "Choose file"
 ```
 # Profit!
-![plot](common/img/post3.png)
 
 ## Short description, how it works inside
 
